@@ -13,4 +13,44 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font-family), sans-serif;
+  font-variation-settings: 'wdth' var(--main-weight-card);
+  background-image: var(--background-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  max-width: var(--main-max-width);
+  width: 100%;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0px;
+  margin-block: 100px;
+}
+
+
+.main {
+  max-width: var(--main-max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.25rem;
+}
+
+.card {
+  background-color: var(--accent-color);
+  border: 2px solid var(--main-color);
+}
+
+.card__image {
+  max-width: 100%;
+  width: 100%;
 }

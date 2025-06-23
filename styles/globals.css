@@ -37,6 +37,15 @@ input {
   font-size: inherit;
 }
 
+img {
+  object-fit: cover;
+}
+
+button {
+  font-family: var(--accent-font-family), sans-serif;
+  font-weight: var(--main-weight-card);
+}
+
 ul,
 ol {
   list-style: none;

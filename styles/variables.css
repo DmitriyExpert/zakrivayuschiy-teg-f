@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font-family: "Inter";
+  --accent-font-family: "PressStart2P";
+  --main-weight-card: 400;
+  --weight-title-card: 700;
+
+  --main-max-width: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
+
+  /* color */
+  --main-color: #000000;
+  --accent-color: #ffffff;
+
+
+  --background-url: url('../images/background.png');
+}
+
