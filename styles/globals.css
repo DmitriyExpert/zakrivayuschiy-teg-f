@@ -6,6 +6,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -26,6 +28,15 @@ li {
   padding: 0;
 }
 
+h1 {
+  font-size: var(--main-title-fs);
+  font-family: var(--accent-font-family);
+}
+
+h2 {
+  font-size: var(--second-title-fs);
+}
+
 a {
   color: inherit;
 }
@@ -44,6 +55,9 @@ img {
 button {
   font-family: var(--accent-font-family), sans-serif;
   font-weight: var(--main-weight-card);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul,

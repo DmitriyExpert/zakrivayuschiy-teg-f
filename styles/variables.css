@@ -7,10 +7,14 @@
   --weight-title-card: 700;
 
   --main-max-width: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
+  --main-title-fs: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
 
   /* color */
   --main-color: #000000;
   --accent-color: #ffffff;
+
+
+  --border-out-block: 2px solid var(--main-color);
 
 
   --background-url: url('../images/background.png');
