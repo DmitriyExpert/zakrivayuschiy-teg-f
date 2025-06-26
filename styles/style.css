@@ -112,20 +112,20 @@
   top: 25px;
   right: 13px;
   z-index: 1;
-  opacity: .3;
+  opacity: .5;
   font-family: var(--accent-font-family);
   font-weight: 400;
   font-size: 14px;
-  -webkit-text-stroke: 0.5px var(--accent-color);
+  text-shadow: 1px 1px var(--accent-color);
+  mix-blend-mode: hard-light;
 }
 
 @supports (text-stroke: 0.5px var(--accent-color)) {
   .label::before {
-    -webkit-text-stroke: none;
-    text-stroke: 0.5px var(--accent-color);
+    text-shadow: none;
+    text-stroke: 0px 5px var(--accent-color);
   }
 }
-
 
 .card__imgbox {
   width: 100%;
@@ -191,9 +191,9 @@
 
 .button {
   position: relative;
-  z-index: 2;
   border: var(--border-out-block);
   overflow: hidden;
+  color: var(--accent-color);
   background-color: var(--accent-color);
 }
 
@@ -203,6 +203,14 @@
   color: var(--accent-color);
   mix-blend-mode: difference;
 }
+
+.floopy-svg {
+  position: relative; 
+  z-index: 1;
+  fill: var(--accent-color);
+  mix-blend-mode: difference; 
+}
+
 
 .button:focus {
   box-shadow: 2px 2px 0px var(--main-color);
@@ -249,9 +257,6 @@
   line-height: .9;
 }
 
-
-
-
 .floopy-svg {
   max-width: 28px;
   max-height: 28px;
@@ -268,7 +273,7 @@
 }
 
 .disket-dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .disket-dialog:open {
@@ -301,25 +306,6 @@
   font-size: 14px;
   line-height: .9;
 }
-
-@keyframes scaleAnimation {
-  to {
-    scale: 1;
-  } from {
-    scale: 1.25;
-  }
-}
-
-@keyframes iskr-opacity {
-  0% {
-    opacity: 0;
-  } 50% {
-    opacity: 1;
-  } 100% {
-    opacity: 0;
-  }
-}
-
 
 @media (width > 375px) {
 
