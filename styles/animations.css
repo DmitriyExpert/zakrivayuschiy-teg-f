@@ -35,7 +35,7 @@
   fill: var(--main-color);
 }
 
-.card__icon-button:hover .core  {
+.card__icon-button:hover .core {
   fill: var(--main-color);
 }
 

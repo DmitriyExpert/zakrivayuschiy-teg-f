@@ -119,7 +119,7 @@
   -webkit-text-stroke: 0.5px var(--accent-color);
 }
 
-@supports (text-stroke: 0.5px var(--accent-color)){
+@supports (text-stroke: 0.5px var(--accent-color)) {
   .label::before {
     -webkit-text-stroke: none;
     text-stroke: 0.5px var(--accent-color);
@@ -192,7 +192,7 @@
 .button {
   position: relative;
   z-index: 2;
-  border: var(--border-out-block);  
+  border: var(--border-out-block);
   overflow: hidden;
   background-color: var(--accent-color);
 }
