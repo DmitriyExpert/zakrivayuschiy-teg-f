@@ -6,8 +6,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -29,8 +29,9 @@ li {
 }
 
 h1 {
-  font-size: var(--main-title-fs);
   font-family: var(--accent-font-family);
+  font-variation-settings: "wdth" var(--main-weight-card);
+  font-size: var(--main-title-fs);
 }
 
 h2 {
@@ -53,9 +54,9 @@ img {
 }
 
 button {
-  font-family: var(--accent-font-family), sans-serif;
-  font-weight: var(--main-weight-card);
   border: none;
+  font-family: var(--accent-font-family), sans-serif;
+  font-variation-settings: 'wdth' var(--main-af-weight-card);
   background-color: transparent;
   cursor: pointer;
 }
@@ -68,10 +69,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
