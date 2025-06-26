@@ -71,7 +71,7 @@
 .card__title {
   padding-inline: 10px;
   padding-block: 4px 6px;
-
+  font-variation-settings: "wdth" var(--weight-title-card);
 }
 
 .label {
@@ -117,7 +117,6 @@
   font-weight: 400;
   font-size: 14px;
   text-shadow: 1px 1px var(--accent-color);
-  mix-blend-mode: hard-light;
 }
 
 @supports (text-stroke: 0.5px var(--accent-color)) {
@@ -174,19 +173,22 @@
   padding-block: 25px;
 }
 
-
 .card__text {
   display: flex;
   flex-direction: column;
   row-gap: 27px;
+}
+
+.card__text p {
   line-height: 1.18;
+  font-variation-settings: "wdth" var(--main-weight-card);
 }
 
 .card__like {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 
 .button {
