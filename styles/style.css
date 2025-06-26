@@ -71,6 +71,8 @@
 .card__title {
   padding-inline: 10px;
   padding-block: 4px 6px;
+  font-family: var(--main-font-family);
+  font-size: var(--second-title-fs);
   font-variation-settings: "wdth" var(--weight-title-card);
 }
 
@@ -181,6 +183,7 @@
 
 .card__text p {
   line-height: 1.18;
+  font-family: var(--main-font-family);
   font-variation-settings: "wdth" var(--main-weight-card);
 }
 
@@ -207,10 +210,12 @@
 }
 
 .floopy-svg {
-  position: relative; 
+  position: relative;
   z-index: 1;
   fill: var(--accent-color);
   mix-blend-mode: difference; 
+  max-width: 28px;
+  max-height: 28px;
 }
 
 
@@ -259,10 +264,7 @@
   line-height: .9;
 }
 
-.floopy-svg {
-  max-width: 28px;
-  max-height: 28px;
-}
+
 
 
 .floopy-svg-dialog {

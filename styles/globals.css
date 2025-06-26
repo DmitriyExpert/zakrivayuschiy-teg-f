@@ -30,13 +30,10 @@ li {
 
 h1 {
   font-family: var(--accent-font-family);
-  font-variation-settings: "wdth" var(--main-weight-card);
+  font-variation-settings: var(--main-weight-card);
   font-size: var(--main-title-fs);
 }
 
-h2 {
-  font-size: var(--second-title-fs);
-}
 
 a {
   color: inherit;
